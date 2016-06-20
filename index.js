@@ -17,7 +17,7 @@ module.exports = {
       _command('git rev-parse --abbrev-ref HEAD', cb)
     }
   , describe : function (cb) {
-      _command('git describe --long', cb)
+      _command('git describe', cb)
     }
   , tag : function (cb) {
       _command('git describe --always --tag --abbrev=0', cb)

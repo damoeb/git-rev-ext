@@ -1,4 +1,4 @@
-# git-rev
+# git-rev-ext
 
 access git revision state in node
 
@@ -62,6 +62,9 @@ return the result of `git rev-parse --short HEAD`
 ## .long(function (commit) { ... })
 return the result of `git rev-parse HEAD`
 
+## .describe(function (commit) { ... })
+return the result of `git describe`
+
 ## .tag(function (tag) { ... })
 return the current tag
 
@@ -70,7 +73,7 @@ return the current branch
 
 # Install
 
-`npm install git-rev`
+`npm install damoeb/git-rev-ext`
 
 # License
 
