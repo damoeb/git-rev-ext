@@ -16,7 +16,10 @@ module.exports = {
   , branch : function (cb) { 
       _command('git rev-parse --abbrev-ref HEAD', cb)
     }
-  , tag : function (cb) { 
+  , describe : function (cb) {
+      _command('git describe --long', cb)
+    }
+  , tag : function (cb) {
       _command('git describe --always --tag --abbrev=0', cb)
     }
   , log : function (cb) { 
